@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<title>OntoSoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+    $("#topMenu").load("topMenu.html");
+});
+</script>
+<style>
+.button {
+	    background-color: #4CAF50; /* Green */
+	    border: none;
+	    color: white;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 13px;
+            margin: 4px 1px;
+	    -webkit-transition-duration: 0.3s; /* Safari */
+	    transition-duration: 0.3s;
+	    cursor: pointer;
+        float:left;
+
+	}
+	.button:hover{
+		background-color: white; 
+	    color: black; 
+	}
+
+	.button1 {background-color: #5D7CA1;}
+	.button1:hover {border: 2px solid #5D7CA1;}
+
+	.button2 {background-color: #5EA17C;}
+	.button2:hover {border: 2px solid #5EA17C;}
+
+	.button3 {background-color: #A07C5E;}
+	.button3:hover {border: 2px solid #A07C5E;}
+
+	.button4 {background-color: #5E7C7C;}
+	.button4:hover {border: 2px solid #5E7C7C;}
+
+	.button5 {background-color: #1E70C0;}
+	.button5:hover {border: 2px solid #1E70C0;}
+
+	.button6 {background-color: #367251;}
+	.button6:hover {border: 2px solid #367251;}
+
+	.button7 {background-color: #947167;}
+	.button7:hover {border: 2px solid #947167;}
+
+	.button8 {background-color: #56B5B1;}
+	.button8:hover {border: 2px solid #56B5B1;}
+
+	.button9 {background-color: #9772c1;}
+	.button9:hover {border: 2px solid #9772c1;}
+</style>
+<body>
+
+
+<!-- Header (defined in topMenu.html)-->
+<header class="w3-container w3-theme w3-padding" id="topMenu">  
+</header>
+
+<div class="w3-container">
+<div class="w3-content">
+
+<h3>An Intelligent Assistant for Software Publication</h3>
+<p>The OntoSoft project is developing an on-line community portal for sharing knowledge about geosciences software.  In the initial stages of the project, we are developing a portal that will provide:</p>
+<ol><li><b>Intelligent assistance</b> to describe software: how to use it appropriately, what kinds of data, how it relates to other software, and other important metadata that helps promote reuse
+</li>
+<li><b>Sophisticated search</b> capabilities to find software for specific needs
+</li>
+<li><b>Interactive advice</b> on software sharing, including open source publication, forming successful developer communities, and other software sharing topics
+</li>
+</ol><p>A detailed description can be found in this paper:</p>
+<ul><li><b><a href="http://www.isi.edu/~gil/papers/gil-etal-kcap2015.pdf">OntoSoft: Capturing Scientific Software Metadata</a></b>. Gil, Y.; Ratnakar, V.; and Garijo, D. In Proceedings of the Eighth ACM International Conference on Knowledge Capture, Palisades, NY, 2015.
+</li>
+</ul><p>The source code for OntoSoft can be found on github:</p>
+<ul><li><a href="https://github.com/IKCAP/ontosoft">https://github.com/IKCAP/ontosoft</a></li>
+</ul><h3>Accessing the OntoSoft Portals</h3>
+<p>OntoSoft portals are set up for particular communities and institutions, and are integrated into a general portal.  In our current work, we are creating a single entry point so users can easily search across portals.</p>
+<p><b><a href="https://w3id.org/ontosoft">Click here to access the portals</a></b></p>
+
+<p>
+<a target="_blank" href="http://www.ontosoft.org/portal/#list"><button class="button button1">Main Portal</button></a>
+</p><p>
+<a target="_blank" href="http://c4p.ontosoft.org/#list"><button class="button button2">C4P</button></a>
+</p><p>
+<a target="_blank" href="http://geospace.ontosoft.org/#list"><button class="button button4">GEOSPACE</button></a>
+</p><p>
+<a target="_blank" href="http://coral.ontosoft.org/#list"><button class="button button5">CRESCYNT</button></a>
+</p><p>
+<a target="_blank" href="http://is-geo.ontosoft.org/#list"><button class="button button7">IS-GEO</button></a>
+</p><p>
+<a target="_blank" href="http://csdms.ontosoft.org/#list"><button class="button button3">CSDMS</button></a>
+</p><p>
+<a target="_blank" href="http://USGS.ontosoft.org/#list"><button class="button button6">USGS</button></a>
+</p><p>
+<a target="_blank" href="http://omics.ontosoft.org/#list"><button class="button button8">OMICS</button></a>
+</p><p>
+<a target="_blank" href="http://www.ontosoft.org/portal/#list"><button class="button button9">MORE</button></a>
+</p>
+<br/>
+
+<h3>Using the OntoSoft Portal</h3>
+<p><b>Describing software:</b><br /><img src="images/Slide1.png" style="width:50%" /></p>
+<p>
+<b>Searching for software:</b><br /><img src="images/Slide2.png" style="width:50%" /></p>
+<p>
+<b>Comparing software:</b><br /><img src="images/Slide3.png" style="width:50%" /></p>
+<h2>History</h2>
+<p>
+The first version of OntoSoft was released in 2014, and was called TurboSoft.  We evaluated TurboSoft with scientists in terms of usability and metadata quality.  We learned a lot from these evaluations, which led to a redesign of our approach and ultilately to today's OntoSoft.  You can explore the <a href="http://www.ontosoft.org/turbosoft-portal/">TurboSoft portal</a> by logging in as “guest”.  The <a href="https://github.com/IKCAP/turbosoft">source code of TurboSoft</a> is available open source on GitHub under an ALv2 license.</p>
+<p>
+<img src="images/PortalSlide.jpg" /></p>
+<p>
+TurboSoft already interfaces with current model repositories such as <a href="http://csdms.colorado.edu/">Community Surface Dynamics Modeling System (CSDMS)</a>, and soon <a href="http://geodynamics.org/cig/">Computational Infrastructure for Geodynamics (CIG)</a> and others.</p>
+<h3>TurboSoft Demonstration videos</h3>
+<p>Our focus to date has been <a href="http://www.ontosoft.org/turbosoft-portal">TurboSoft</a>, an intelligent assistant that guides users through best practices for publishing their software.  Here are a few demonstrations of the initial TurboSoft prototype.  We continue to extend TurboSoft and welcome <a href="mailto:OntoSoft.earthcube@gmail.com">your suggestions</a>.</p>
+<h4>TurboSoft Prototype Demonstration: Advice on Best Practices</h4>
+<p>TurboSoft provides interactive advice to encourage best practices in preparing code for software sharing.  In this demo, TurboSoft does a simple analysis of the code and looks for potential problems and offers suggestions to fix them.  In the example shown, when there is OS-specific code or hardcoded paths TurboSoft suggests that they be replaced with more general code.  These checks are based on best practices for open software sharing and reuse.</p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/EeGTDGVFLlI" frameborder="0" allowfullscreen=""></iframe><p></p>
+<h4>TurboSoft Prototype Demonstration: Automatic Metadata Extraction</h4>
+<p>TurboSoft automatically extracts metadata to describe software, so the user does not have to provide it by hand.  In this demo, TurboSoft takes examples or test datasets, and extracts the MIME types of data as metadata of the inputs and outputs of the software.  The extracted metadata allows TurboSoft to suggest visualizations or other software that can be used for those data types.  The metadata extraction is done using <a href="http://tika.apache.org">Apache Tika</a>.</p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/0PXAmVQ9GsI" frameborder="0" allowfullscreen=""></iframe><p></p>
+<h4>TurboSoft Prototype Demonstration: Automatic Metadata Inference</h4>
+<p>TurboSoft automatically infers new metadata to describe software, so the user does not have to provide it by hand.  In this demo, when a user specifies standard names or assumptions for their model, TurboSoft infers other assumptions made by the model.  The inferences are based on rules based on semantic representations of standard names and assumptions represented using <a href="http://www.w3.org/2001/sw/wiki/">Semantic Web standards</a>.</p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/2Z57EHGxPtw" frameborder="0" allowfullscreen=""></iframe><p></p>
+<h4>TurboSoft Prototype Demonstration: Scalable Search</h4>
+<p>TurboSoft supports scalable search through the software repository.  In this demo, the user searches for specific kinds of software, such as software that outputs a certain type of data or software that is open source.  This faceted search is done using <a href="http://lucene.apache.org/solr/">Apache Solr</a>.</p>
+<iframe width="560" height="315" src="http://www.youtube.com/embed/rE1b7NZcJT8" frameborder="0" allowfullscreen=""></iframe></div>
+
+</div>
+</div>
+<br/>
+
+<!-- Footer (defined in footer.html)-->
+<footer class="w3-container w3-content  w3-theme-dark w3-padding-16" id ="footerContent">
+</footer>
+
+</body>
+</html>

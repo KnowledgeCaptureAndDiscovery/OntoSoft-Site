@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>OntoSoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+    $("#topMenu").load("topMenu.html");
+});
+</script>
+<body>
+
+
+<!-- Header (defined in topMenu.html)-->
+<header class="w3-container w3-theme w3-padding" id="topMenu">     
+</header>
+
+<div class="w3-container">
+<div class="w3-content">
+
+<p>
+An overview of OntoSoft can be seen in the figure below:
+</p>
+<p><img src="images/architecture.png" style="width:85%" /></p>
+<p>
+OntoSoft is a metadata registry that describes software from different communities in a distributed manner. The metadata captured by OntoSoft falls into six major categories based on information that a scientist would seek about the software: 1) identify software, 2) understand and assess software, 3) execute software, 4) get support for the software, 5) do research with the software, and 6) update the software. The metadata properties themselves can be either “recommended” or “optional”. The rationale for this organization is to allow users who contribute software to understand why the metadata is requested, and to allow the users that are looking to reuse the software where to find metadata that is relevant to them. This organization is captured in <a href="http://ontosoft.org/software#">the OntoSoft ontology</a>, which  provides the backbone for structuring the OntoSoft user interface.
+</p>
+<p>
+As shown in the top of the figure, the interface allows publishing software, adding metadata about software, searching software across different OntoSoft portals, and comparing different software. This is possible because each OntoSoft portal has a public API that can be used to retrieve a list of all software entries and all the metadata for a particular software entry.  The results can be returned in different serializations (e.g., JSON, RDF/XML).
+</p>
+<p>
+Each OntoSoft portal shows its own software entries by default.  Each portal can be configured to index the software entries from other portals, aggregating all their data so it can be efficiently queried. This allows users to view, filter, and compare entries from other portals. When a user is logged into a site and selects a software entry from another portal, the user is redirected to the page of that software entry in the portal in which the entry was created. With this approach, the information is decentralized and each community is responsible for their own software entries while enabling others to see those entries from their own portal.
+</p>
+<p>
+OntoSoft allows users to specify who can edit metadata for their software entries.  This is done through an access control ontology.  For a software entry they published, users can specify who can edit its metadata or whether others can edit specific metadata properties.
+</p>
+<p>
+There are currently several OntoSoft portals deployed to describe software in different communities like Earth systems modeling, paleoclimatology, geospace sciences and environmental omics. Additional sites are being set up for other communities, as well as for institutions that want to track the software produced by their members.  There are currently more than 600 software entries described in OntoSoft.
+</p>
+
+</div>
+  
+</div>
+<br/>
+
+<!-- Footer (defined in footer.html)-->
+<footer class="w3-container w3-content  w3-theme-dark w3-padding-16" id ="footerContent">
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<title>OntoSoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+    $("#topMenu").load("topMenu.html");
+});
+</script>
+<style>
+.button {
+			    background-color: #4CAF50; 
+			    border: none;
+			    color: white;
+			    padding: 16px 32px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			    font-size: 25px;
+			    margin: 4px 4px;
+			    height:90px;
+			    -webkit-transition-duration: 0.4s; /* Safari */
+			    transition-duration: 0.4s;
+			    cursor: pointer;
+                            width:40%;
+			}
+	.button:hover{
+		background-color: white; 
+	    color: black; 
+	}
+
+	.button1 {background-color: #5D7CA1;}
+	.button1:hover {border: 2px solid #5D7CA1;}
+
+	.button2 {background-color: #5EA17C;}
+	.button2:hover {border: 2px solid #5EA17C;}
+
+	.button3 {background-color: #A07C5E;}
+	.button3:hover {border: 2px solid #A07C5E;}
+
+	.button4 {background-color: #5E7C7C;}
+	.button4:hover {border: 2px solid #5E7C7C;}
+
+	.button5 {background-color: #1E70C0;}
+	.button5:hover {border: 2px solid #1E70C0;}
+
+	.button6 {background-color: #367251;}
+	.button6:hover {border: 2px solid #367251;}
+
+	.button7 {background-color: #947167;}
+	.button7:hover {border: 2px solid #947167;}
+
+	.button8 {background-color: #56B5B1;}
+	.button8:hover {border: 2px solid #56B5B1;}
+
+	.button9 {background-color: #9772c1;}
+	.button9:hover {border: 2px solid #9772c1;}
+</style>
+<body>
+
+
+<!-- Header (defined in topMenu.html)-->
+<header class="w3-container w3-theme w3-padding" id="topMenu">  
+</header>
+
+<div class="w3-container">
+<div class="w3-content w3-center">
+
+<b><a target="_blank" href="http://www.ontosoft.org/portal/#list"> <button class="button button1">Main OntoSoft Portal</button></a></b></p>
+<p>		<b><a target="_blank" href="http://c4p.ontosoft.org/#list"> <button class="button button2">C4P</button></a></b> 	<b><br /><a target="_blank" href="http://csdms.ontosoft.org/#list"><button class="button button3">CSDMS</button></a></b><br /><b><a target="_blank" href="http://geospace.ontosoft.org/#list">	 <button class="button button4">GEOSPACE</button></a></b><br /><b><a target="_blank" href="http://USGS.ontosoft.org/#list">	 <button class="button button6">USGS</button></a></b><br /><b><a target="_blank" href="http://Coral.ontosoft.org/#list">		<button class="button button5">CRESCYNT</button></a></b><br /><b><a target="_blank" href="http://omics.ontosoft.org/#list">		<button class="button button8">OMICS</button></a></b><br /><b><a target="_blank" href="http://is-geo.ontosoft.org/#list">		<button class="button button7">IS-GEO</button></a></b><br /><b><a target="_blank" href="http://www.ontosoft.org/portal/#list">  <button class="button button9">MORE</button></a></b></p>
+
+</div>
+</div>
+<br/>
+
+<!-- Footer (defined in footer.html)-->
+<footer class="w3-container w3-content w3-theme-dark w3-padding-16" id ="footerContent">
+</footer>
+
+</body>
+</html>

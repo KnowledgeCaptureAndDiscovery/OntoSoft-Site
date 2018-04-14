@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title>OntoSoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+    $("#topMenu").load("topMenu.html");
+});
+</script>
+<body>
+
+
+<!-- Header (defined in topMenu.html)-->
+<header class="w3-container w3-theme w3-padding" id="topMenu"> 
+</header>
+
+<div class="w3-container">
+<div class="w3-content" style="max-width:800px;position:relative">
+  <img class="slideshow w3-animate-fading" src="images/OntoSlide1.png" style="width:100%">
+  <img class="slideshow w3-animate-fading" src="images/OntoSlide2.png" style="width:100%">
+  <img class="slideshow w3-animate-fading" src="images/OntoSlide3.png" style="width:100%">
+  <img class="slideshow w3-animate-fading" src="images/OntoSlide4.png" style="width:100%">
+  <img class="slideshow w3-animate-fading" src="images/OntoSlide5.png" style="width:100%">
+  
+<!--
+  <button class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;left:0;" onclick="plusDivs(-1)">&#10094;</a>
+  <button class="w3-button w3-hover-dark-grey" style="position:absolute;top:45%;right:0;" onclick="plusDivs(+1)">&#10095;</a>
+-->
+</div>
+<br/>
+<div class="w3-content w3-center">
+<a href="files/OntoSoft-TwoPager.pdf"><img src="images/FlyerButtonOnto.png" width="193"></a>
+
+</div>
+
+<!-- Footer (defined in footer.html)-->
+<footer class="w3-container w3-content  w3-theme-dark w3-padding-16" id ="footerContent">
+</footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+
+// Slideshows
+var slideIndex = 1;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slideshow");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}    
+    x[slideIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000);    
+}
+
+</script>
+
+</body>
+</html>

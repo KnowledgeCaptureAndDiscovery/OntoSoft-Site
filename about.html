@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>OntoSoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue.css">-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+    $("#topMenu").load("topMenu.html");
+});
+</script>
+<body>
+
+
+<!-- Header (defined in topMenu.html)-->
+<header class="w3-container w3-theme w3-padding" id="topMenu">  
+</header>
+
+<div class="w3-container">
+<div class="w3-content">
+<h4>The Context</h4>
+<p>The OntoSoft project is part of the <a href="http://www.earthcube.org">NSF EarthCube Initiative</a>.  The <a href="http://www.earthcube.org">NSF EarthCube Initiative</a> aims to enable scientists to solve challenging problems that span diverse geoscience domains.  This requires not only data sharing, it requires new forms of knowledge sharing.  The focus of OntoSoft is to promote knowledge sharing about the software developed for geosciences.  </p>
+<h4>The Challenge</h4>
+<p>Geosciences software embodies important scientific knowledge that should be explicitly captured, curated, managed, and disseminated.  Recurring issues of provenance and uncertainty in the context of data could be better addressed with improved treatment of geoscience software: it is easy to see that nothing describes data more precisely than the software that generates or uses the data.  Software is implicitly linked to its documentation, datasets it uses or produces, publications, and ultimately scientific theories.  Scientists recognize the value of sharing software to avoid replicating effort or to reproduce results from others.  However, the stewardship of software in geosciences must be greatly improved.  </p>
+<p>First, while modeling frameworks have dramatically improved software sharing, there are orders of magnitude more codes devoted to preparing data for input to a model (what we could call “pre-model software”) and preparing data that results from a model (“post-model” software). Studies show that scientists spend between 60%-80% of a project’s effort collecting and preparing data before doing new science. This would indicate a significant overhead in developing pre-model software for data preparation is only rarely shared (e.g., through libraries such as NetCDF-Java, the recent Apache OCW effort, and NumPy) and rarely reused, particularly across disciplines.  While the loss of “dark data” in science is well recognized, we see an analogous problem in the pervasive loss of “dark software”.  It leads to wasted investments, particularly for younger researchers that are often charged with such tasks, which often go unnoticed.  </p>
+<p>Second, the inaccessibility of software as an explicit science product that, like data, should be shared and reused leads to barriers for those who cannot afford such investments, and to barriers for software experts that could otherwise become involved in supporting software efforts.  </p>
+<p>Finally, the education of future scientists crucially depends on the ability to actively explore problems by experimenting with science-grade data and software.  This will not be possible unless science software is captured and properly disseminated.  In summary, although geoscientists program a lot of code to analyze their data, that important software is often not shared and rarely preserved. </p>
+<p></p><h4>Our Approach</h4>
+<p>The goal of the OntoSoft project is to enable the creation of a germinal ecosystem for software stewardship in geosciences that will empower  scientists to manage their software as valuable scientific assets in an open transparent mode that enables broader access to that software by other scientists, software professionals, students, and decision makers.</p>
+<p>Scientific software stewardship requires a combination of cyberinfrastructure, social infrastructure, and professional development infrastructure.  Our cross-disciplinary team has had direct experience with a variety of aspects of the scientific software lifecycle, from conception to development, deployment, characterization, integration, composition, and dissemination through open source communities and geosciences modeling frameworks. </p>
+<p class="w3-center"><img src="images/triangle.jpg" width="600" class="img-thumbnail" /></p>
+<p>
+Our work focuses on:</p>
+<ol><li><b>Facilitating software publication</b> through a personal assistant that guides a user through best practices.  Users choose the degree of investment they are willing to make in componentizing, describing, licensing, and maintaining their software.  It will assist in metadata capture for open source publication, the formation of communities around the software, and set up mechanisms for software citation and credit.  This guidance is designed around explicitly articulated best practices for open software sharing and reuse.</li>
+<li><b>Enabling broad software dissemination</b> through a “software commons” for geosciences that supports software contributions (prepared through OntoSoft or otherwise), software discovery through multi-faceted search, and that fosters social interactions through dynamic formation of communities of interest. OntoSoft interoperates with existing software repositories and modeling frameworks in geosciences by importing descriptions of their existing content and in turn advertising to those frameworks new contributions.  OntoSoft is based on explicit incentives from social sciences and open source communities.</li>
+<li><b>Providing just-in-time training materials</b> through an annotated collection of educational units (videos, screen captures, decision trees, reports) ranging from basic education to professional training on all aspects of software stewardship.  These materials will run the gamut from simple to complex, e.g., from suggesting the use of the most popular open source license for beginners to walking through a decision tree of nuanced choices for advanced users.  These materials will be seamlessly integrated with the OntoSoft user interfaces, and present opportunities for contextualized learning as needed in the context of a user’s context of interaction with the framework.</li>
+</ol><p></p><h4>Benefits</h4>
+<p>The OntoSoft project will result in a germinal social site for the <a href="http://www.earthcube.org">EarthCube</a>, where scientists can discover alternative approaches to release free software, use intelligent interfaces to explain how their software works, and form productive communities around software projects. </p>
+<p>This research has the potential to fundamentally transform geosciences by making scientific software readily available to researchers and citizen scientists for efficient data analysis.</p>
+<p>More broadly, this work will improve our understanding of how to promote software sharing in science, support better software stewardship, and capture metadata for scientific software. </p>
+</div>
+  
+</div>
+<br/>
+
+<!-- Footer (defined in footer.html)-->
+<footer class="w3-container w3-content  w3-theme-dark w3-padding-16" id ="footerContent">
+</footer>
+
+</body>
+</html>

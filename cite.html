@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<title>OntoSoft</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    //load the parts of the page that are always the same across the portal
+    $("#footerContent").load("footer.html");
+    $("#topMenu").load("topMenu.html");
+});
+</script>
+<body>
+
+
+<!-- Header (defined in topMenu.html)-->
+<header class="w3-container w3-theme w3-padding" id="topMenu">  
+</header>
+
+<div class="w3-container">
+<div class="w3-content">
+
+<p>Please use this citation for OntoSoft:</p>
+<p><b><a href="http://www.isi.edu/~gil/papers/gil-etal-kcap2015.pdf">OntoSoft: Capturing Scientific Software Metadata.</a></b> Yolanda Gil, Varun Ratnakar, and Daniel Garijo. , Palisades, NY, 2015. <i>Proceedings of the Eighth ACM International Conference on Knowledge Capture (K-CAP)</i>, Palisades, NY, October 2015.</p>
+
+
+</div>
+</div>
+<br/>
+
+<!-- Footer (defined in footer.html)-->
+<footer class="w3-container w3-content w3-theme-dark w3-padding-16" id ="footerContent">
+</footer>
+
+</body>
+</html>
